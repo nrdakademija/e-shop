@@ -8,12 +8,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'app';
+  
+  constructor(private router: Router) {
 
-  constructor(private router: Router){
-
-  }
-
-  routeToInventory() {
-    this.router.navigate(['Inventory']);
   }
 }

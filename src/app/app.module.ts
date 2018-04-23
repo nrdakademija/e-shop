@@ -3,32 +3,29 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { appRoutingModule } from './app.routing.component';
-import { employeeComponent } from './Components/employees/employees.compontent';
-import { InventoryComponent } from './inventory/inventory.component';
-import { InventoryService } from './services/inventory/inventory.services';
+import { HomeComponent } from './components/home/home.component';
+import { AppRoutingModule } from './app.routing.module';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { LoginComponent } from './components/login/login.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductsService } from './services/products/products.service';
 import { HttpModule } from '@angular/http';
-import { listFilterPipe } from './pipes/list-filter.pipe';
-import { inventoryListFilterButtonsComponent } from './inventory-list-filter/inventory-list.filter.component';
-import { employeeService } from './services/employees/employees.service';
-
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    employeeComponent,
-    InventoryComponent,
-    listFilterPipe,
-    inventoryListFilterButtonsComponent
+    HomeComponent,
+    NavigationComponent,
+    LoginComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
-    appRoutingModule,
+    AppRoutingModule,
     HttpModule,
   ],
-  providers: [InventoryService,
-    employeeService],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
