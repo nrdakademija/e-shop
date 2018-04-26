@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import {Ng2Webstorage} from 'ngx-webstorage';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app.routing.module';
@@ -26,6 +26,7 @@ import { RegistrationComponent } from './components/registration/registration.co
     BrowserModule,
     AppRoutingModule,
     HttpModule,
+    Ng2Webstorage,
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]

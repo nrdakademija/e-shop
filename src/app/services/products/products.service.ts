@@ -4,6 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import { productsModel } from '../../models/products/products.model';
+
 @Injectable()
 export class ProductsService {
   url = 'http://localhost:3000/products';
@@ -15,4 +16,5 @@ export class ProductsService {
           .map((res: Response) => res.json() as productsModel[])
           .catch((error: any) => Observable.throw(error));
   }
+  
 }
