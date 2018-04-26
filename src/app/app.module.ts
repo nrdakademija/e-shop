@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsService } from './services/products/products.service';
 import { HttpModule } from '@angular/http';
+import { RegistrationComponent } from './components/registration/registration.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { HttpModule } from '@angular/http';
     NavigationComponent,
     LoginComponent,
     ProductComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
