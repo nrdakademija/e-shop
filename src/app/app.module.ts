@@ -13,6 +13,7 @@ import { HttpModule } from '@angular/http';
 import { RegistrationComponent } from './components/registration/registration.component';
 import {AngularcliStarRatingModule} from 'angularcli-star-rating';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { CartComponent } from './components/cart/cart.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     LoginComponent,
     ProductComponent,
     RegistrationComponent,
+    CartComponent,
     
   ],
   imports: [
