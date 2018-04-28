@@ -26,6 +26,7 @@ export class CartComponent implements OnInit {
     for(let a of this.products){
       this.price=+this.price + +a.price*+a.quantity;
     }
+    this.price=+this.price.toFixed(2);
   }
   leaving(){
     this.localSt.clear();
