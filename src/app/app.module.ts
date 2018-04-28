@@ -11,6 +11,8 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductsService } from './services/products/products.service';
 import { HttpModule } from '@angular/http';
 import { RegistrationComponent } from './components/registration/registration.component';
+import {AngularcliStarRatingModule} from 'angularcli-star-rating';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 @NgModule({
@@ -21,13 +23,17 @@ import { RegistrationComponent } from './components/registration/registration.co
     LoginComponent,
     ProductComponent,
     RegistrationComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
     Ng2Webstorage,
+    AngularcliStarRatingModule,
+    AngularFontAwesomeModule
   ],
+  
   providers: [ProductsService],
   bootstrap: [AppComponent]
 })

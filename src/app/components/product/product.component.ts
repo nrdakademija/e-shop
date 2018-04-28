@@ -27,5 +27,5 @@ export class ProductComponent implements OnInit {
     a.push(product);
     this.localSt.store('cart',JSON.stringify(a));
   }
-
+  
 }

@@ -4,4 +4,5 @@ export class productsModel{
     name: String;
     summary: String;
     price:Number;
+    rating:Number;
 }
