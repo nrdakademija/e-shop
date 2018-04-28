@@ -20,16 +20,19 @@ export class CartComponent implements OnInit {
   }
   GetProduct(){
     this.products=JSON.parse(this.localSt.retrieve('cart')) || [];
-    console.log(this.products);
   }
   countPrice(){
+    this.price=0;
     for(let a of this.products){
-      this.price=+this.price + +a.price;
+      this.price=+this.price + +a.price*+a.quantity;
     }
+  }
+  leaving(){
+    this.localSt.clear();
+    this.localSt.store('cart',JSON.stringify(this.products));
   }
   removeProduct(delte:productsModel){
     this.products = this.products.filter(obj => obj !== delte );
-    this.localSt.clear();
-    this.localSt.store('cart',JSON.stringify(this.products));
+    this.leaving();
   }
 }

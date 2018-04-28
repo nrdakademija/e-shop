@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import{FormsModule} from '@angular/forms'
 
 import {Ng2Webstorage} from 'ngx-webstorage';
 import { AppComponent } from './app.component';
@@ -32,6 +33,7 @@ import { CartComponent } from './components/cart/cart.component';
     AppRoutingModule,
     HttpModule,
     Ng2Webstorage,
+    FormsModule,
     AngularcliStarRatingModule,
     AngularFontAwesomeModule
   ],
