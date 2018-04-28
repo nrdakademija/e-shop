@@ -27,4 +27,9 @@ export class CartComponent implements OnInit {
       this.price=+this.price + +a.price;
     }
   }
+  removeProduct(delte:productsModel){
+    this.products = this.products.filter(obj => obj !== delte );
+    this.localSt.clear();
+    this.localSt.store('cart',JSON.stringify(this.products));
+  }
 }
