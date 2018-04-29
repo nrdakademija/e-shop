@@ -14,7 +14,7 @@
           </div>
           <button class="btn btn-primary" (click)="putProduct(product)" >BUY</button>
           <div class="card-footer">
-            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            <cli-star-rating [starReadonly] = "false" [rating]="product.rating"></cli-star-rating>
           </div>
         </div>
       </div>

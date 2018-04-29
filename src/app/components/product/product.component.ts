@@ -24,8 +24,14 @@ export class ProductComponent implements OnInit {
   putProduct(product):any{
     let a:Array<productsModel>;
     a=JSON.parse(this.localSt.retrieve('cart')) || [];
+    if(a.includes(product)){
+      a[a.indexOf(product)].quantity=+a[a.indexOf(product)].quantity + 1;
+    }
+    else{
+      product.quantity=1;
     a.push(product);
+    }
     this.localSt.store('cart',JSON.stringify(a));
   }
-
+  
 }

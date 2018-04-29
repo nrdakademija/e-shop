@@ -5,28 +5,32 @@
       "image": "http://juliandance.org/wp-content/uploads/2016/01/RedApple.jpg",
       "name": "obuolys",
       "summary": "Red",
-      "price": "2.01"
+      "price": "2.01",
+	  "rating": "2"
     },
     {
       "id": 2,
       "image": "http://juliandance.org/wp-content/uploads/2016/01/RedApple.jpg",
       "name": "obuolys",
       "summary": "Zalias",
-      "price": "2.54"
+      "price": "2.54",
+	  "rating": "2"
     },
     {
       "id": 3,
       "image": "http://juliandance.org/wp-content/uploads/2016/01/RedApple.jpg",
       "name": "obuolys",
       "summary": "Geltonas",
-      "price": "1.11"
+      "price": "1.11",
+	  "rating": "5"
     },
     {
       "id": 4,
       "image": "http://juliandance.org/wp-content/uploads/2016/01/RedApple.jpg",
       "name": "obuolys",
       "summary": "Mėlynas",
-      "price": "2.11"
+      "price": "2.11",
+	  "rating": "0.5"
     }
   ]
 }
