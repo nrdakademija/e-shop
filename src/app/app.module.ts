@@ -15,6 +15,7 @@ import { RegistrationComponent } from './components/registration/registration.co
 import {AngularcliStarRatingModule} from 'angularcli-star-rating';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { CartComponent } from './components/cart/cart.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { CartComponent } from './components/cart/cart.component';
     ProductComponent,
     RegistrationComponent,
     CartComponent,
-    
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
