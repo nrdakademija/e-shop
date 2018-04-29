@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import{FormsModule} from '@angular/forms'
+import{FormsModule, FormBuilder} from '@angular/forms'
 
 import {Ng2Webstorage} from 'ngx-webstorage';
 import { AppComponent } from './app.component';
@@ -16,7 +16,8 @@ import {AngularcliStarRatingModule} from 'angularcli-star-rating';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { CartserviceService } from './services/Cart/cartservice.service';
 
 @NgModule({
   declarations: [
@@ -36,10 +37,11 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     Ng2Webstorage,
     FormsModule,
     AngularcliStarRatingModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    ReactiveFormsModule
   ],
   
-  providers: [ProductsService],
+  providers: [ProductsService,CartserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

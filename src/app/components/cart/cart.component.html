@@ -24,12 +24,12 @@
 				</td>
 				<td data-th="Price">{{Product.price}}</td>
 				<td data-th="Quantity">
-					<input type="number" min='1' [(ngModel)]="Product.quantity" (ngModelChange)="countPrice()" class="form-control text-center"
+					<input type="number" min='1' [(ngModel)]="Product.quantity" (ngModelChange)="this.prod.countPrice()" class="form-control text-center"
 					/>
 				</td>
 				<td data-th="Subtotal" class="text-center">{{(Product.price*Product.quantity).toFixed(2)}}</td>
 				<td class="actions" data-th="">
-					<button class="btn btn-danger btn-sm" (click)="removeProduct(Product)">
+					<button class="btn btn-danger btn-sm" (click)="Delete(Product)">
 						<i class="fa fa-trash-o"></i>
 					</button>
 				</td>

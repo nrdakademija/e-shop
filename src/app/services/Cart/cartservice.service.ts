@@ -1,24 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { productsModel } from '../../models/products/products.model';
 import { LocalStorageService } from 'ngx-webstorage';
 
-@Component({
-  selector: 'app-checkout',
-  templateUrl: './checkout.component.html',
-  styleUrls: ['./checkout.component.css']
-})
-export class CheckoutComponent implements OnInit {
+@Injectable()
+export class CartserviceService {
 
+  products:productsModel[];
+  price: Number;
   constructor(private localSt:LocalStorageService) { }
-
-  products:Array<productsModel>;
-  price:Number=0;
-  ngOnInit() {
-    this.GetProduct();
-    this.countPrice();
-  }
   GetProduct(){
     this.products=JSON.parse(this.localSt.retrieve('cart')) || [];
+    return this.products;
   }
   countPrice(){
     this.price=0;
@@ -26,13 +18,15 @@ export class CheckoutComponent implements OnInit {
       this.price=+this.price + +a.price*+a.quantity;
     }
     this.price=+this.price.toFixed(2);
+    return this.price;
   }
-  leaving(){
+  leaving(prod:productsModel[]){
     this.localSt.clear();
-    this.localSt.store('cart',JSON.stringify(this.products));
+    console.log(prod);
+    this.localSt.store('cart',JSON.stringify(prod));
   }
   removeProduct(delte:productsModel){
     this.products = this.products.filter(obj => obj !== delte );
-    this.leaving();
+    this.leaving(this.products);
   }
 }
