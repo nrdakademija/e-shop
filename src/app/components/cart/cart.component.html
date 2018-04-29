@@ -29,7 +29,7 @@
 				</td>
 				<td data-th="Subtotal" class="text-center">{{(Product.price*Product.quantity).toFixed(2)}}</td>
 				<td class="actions" data-th="">
-					<button class="btn btn-danger btn-sm" (click)="Delete(Product)">
+					<button class="btn btn-danger btn-sm" (click)="delete(Product)">
 						<i class="fa fa-trash-o"></i>
 					</button>
 				</td>
@@ -43,7 +43,7 @@
 			</tr>
 			<tr>
 				<td>
-					<a (click)="leaving()" [routerLink]="['../']" class="btn btn-warning">
+					<a (click)="this.prod.leaving(this.products)" [routerLink]="['../']" class="btn btn-warning">
 						<i class="fa fa-angle-left"></i> Continue Shopping</a>
 				</td>
 				<td colspan="2" class="d-none d-sm-table-cell"></td>

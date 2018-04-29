@@ -20,11 +20,8 @@ export class CartComponent implements OnInit {
    this.products= this.prod.GetProduct();
    this.price= this.prod.countPrice();
   }
-  Delete(dele:productsModel){
-    this.prod.removeProduct(dele);
+  delete(prod:productsModel){
+    this.prod.removeProduct(prod);
     this.products= this.prod.GetProduct();
-  }
-  leaving(){
-    this.prod.leaving(this.products);
   }
 }
