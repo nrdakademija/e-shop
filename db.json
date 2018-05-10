@@ -6,7 +6,8 @@
       "name": "obuolys",
       "summary": "Red",
       "price": "2.01",
-	  "rating": "2"
+	  "rating": "2",
+	  "category":"Fruits"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "name": "obuolys",
       "summary": "Zalias",
       "price": "2.54",
-	  "rating": "2"
+	  "rating": "2",
+	  "category": "Fruits"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "name": "obuolys",
       "summary": "Geltonas",
       "price": "1.11",
-	  "rating": "5"
+	  "rating": "5",
+	  "category": "Fruits"
     },
     {
       "id": 4,
@@ -30,7 +33,15 @@
       "name": "obuolys",
       "summary": "Mėlynas",
       "price": "2.11",
-	  "rating": "0.5"
+	  "rating": "0.5",
+	  "category": "Fruits"
     }
+  ],
+  "category":
+  [
+	{"name":"Fruits"},
+	{"name":"Candies"},
+	{"name":"Cookies"},
+	{"name":"Chocolate"}
   ]
 }

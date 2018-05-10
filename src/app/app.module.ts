@@ -18,6 +18,8 @@ import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CartserviceService } from './services/Cart/cartservice.service';
+import { HistoryComponent } from './components/history/history.component';
+import { CategoryService } from './services/category/category.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { CartserviceService } from './services/Cart/cartservice.service';
     ProductComponent,
     RegistrationComponent,
     CartComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,7 @@ import { CartserviceService } from './services/Cart/cartservice.service';
     ReactiveFormsModule
   ],
   
-  providers: [ProductsService,CartserviceService],
+  providers: [ProductsService,CartserviceService, CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
