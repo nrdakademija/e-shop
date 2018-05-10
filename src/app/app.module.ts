@@ -20,6 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CartserviceService } from './services/Cart/cartservice.service';
 import { HistoryComponent } from './components/history/history.component';
 import { CategoryService } from './services/category/category.service';
+import { CategoryPipe } from './pipes/category/category.pipe';
+import { CategorysortService } from './services/shared/categorysort.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { CategoryService } from './services/category/category.service';
     RegistrationComponent,
     CartComponent,
     CheckoutComponent,
-    HistoryComponent
+    HistoryComponent,
+    CategoryPipe
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,7 @@ import { CategoryService } from './services/category/category.service';
     ReactiveFormsModule
   ],
   
-  providers: [ProductsService,CartserviceService, CategoryService],
+  providers: [ProductsService,CartserviceService, CategoryService, CategorysortService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,6 +3,7 @@ import { ProductsService } from '../../services/products/products.service';
 import {Observable} from 'rxjs/';
 import { productsModel } from '../../models/products/products.model';
 import { LocalStorageService, LocalStorage } from 'ngx-webstorage';
+import { CategorysortService } from '../../services/shared/categorysort.service';
 
 @Component({
   selector: 'app-product',
@@ -12,7 +13,7 @@ import { LocalStorageService, LocalStorage } from 'ngx-webstorage';
 export class ProductComponent implements OnInit {
 
     products: Observable<productsModel[]>;
-  constructor(private productsService: ProductsService,private localSt:LocalStorageService) { }
+  constructor(private productsService: ProductsService,private localSt:LocalStorageService,private categorysort: CategorysortService) { }
 
   ngOnInit() {
     this.productsService.getList().subscribe((response : productsModel[])=> 

@@ -6,7 +6,7 @@
 
       <h1 class="my-4">Parduotuvė</h1>
       <div class="list-group" *ngFor="let name of Categories |async">
-        <a href="#" class="list-group-item">{{name.name}}</a>
+        <a (click)="categorysort.setCategory(name.name)" class="list-group-item">{{name.name}}</a>
       </div>
 
     </div>

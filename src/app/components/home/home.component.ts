@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CategoryService } from '../../services/category/category.service';
 import { categoryModel } from '../../models/category/category.model';
 import {Observable} from 'rxjs/';
+import { CategorysortService } from '../../services/shared/categorysort.service';
 
 
 @Component({
@@ -12,7 +13,8 @@ import {Observable} from 'rxjs/';
 export class HomeComponent implements OnInit {
 
   Categories:Observable<categoryModel[]>;
-  constructor(private CategoryService: CategoryService ) {
+
+  constructor(private CategoryService: CategoryService,private categorysort: CategorysortService ) {
 
    }
 
@@ -23,6 +25,6 @@ export class HomeComponent implements OnInit {
     });
     console.log(this.Categories);
   }
-  
+
 
 }
