@@ -15,7 +15,6 @@ import { RegistrationComponent } from './components/registration/registration.co
 import {AngularcliStarRatingModule} from 'angularcli-star-rating';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { CartComponent } from './components/cart/cart.component';
-import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CartserviceService } from './services/Cart/cartservice.service';
 import { HistoryComponent } from './components/history/history.component';
@@ -32,7 +31,6 @@ import { CategorysortService } from './services/shared/categorysort.service';
     ProductComponent,
     RegistrationComponent,
     CartComponent,
-    CheckoutComponent,
     HistoryComponent,
     CategoryPipe
   ],

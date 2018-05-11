@@ -6,8 +6,8 @@
       "name": "obuolys",
       "summary": "Red",
       "price": "2.01",
-	  "rating": "2",
-	  "category":"Fruits"
+      "rating": "2",
+      "category": "Fruits"
     },
     {
       "id": 2,
@@ -15,8 +15,8 @@
       "name": "obuolys",
       "summary": "Zalias",
       "price": "2.54",
-	  "rating": "2",
-	  "category": "Fruits"
+      "rating": "2",
+      "category": "Fruits"
     },
     {
       "id": 3,
@@ -24,8 +24,8 @@
       "name": "obuolys",
       "summary": "Geltonas",
       "price": "1.11",
-	  "rating": "5",
-	  "category": "Fruits"
+      "rating": "5",
+      "category": "Fruits"
     },
     {
       "id": 4,
@@ -33,15 +33,381 @@
       "name": "obuolys",
       "summary": "Mėlynas",
       "price": "2.11",
-	  "rating": "0.5",
-	  "category": "Fruits"
+      "rating": "0.5",
+      "category": "Fruits"
     }
   ],
-  "category":
-  [
-	{"name":"Fruits"},
-	{"name":"Candies"},
-	{"name":"Cookies"},
-	{"name":"Chocolate"}
+  "category": [
+    {
+      "name": "Fruits"
+    },
+    {
+      "name": "Candies"
+    },
+    {
+      "name": "Cookies"
+    },
+    {
+      "name": "Chocolate"
+    }
+  ],
+  "payments": [
+    {
+      "id": "PAY-14P3508003313404VLL2UCII",
+      "intent": "sale",
+      "state": "approved",
+      "cart": "29D24526KG8895821",
+      "create_time": "2018-05-11T07:07:24Z",
+      "payer": {
+        "payment_method": "paypal",
+        "status": "UNVERIFIED",
+        "payer_info": {
+          "email": "h1339335@nwytg.com",
+          "first_name": "Madison",
+          "middle_name": "Madison",
+          "last_name": "Jones",
+          "payer_id": "UHA84FANND3R2",
+          "country_code": "BG",
+          "shipping_address": {
+            "recipient_name": "Madison Jones",
+            "line1": "River Street 137",
+            "city": "Bulgaria",
+            "state": "",
+            "postal_code": "6489",
+            "country_code": "BG"
+          }
+        }
+      },
+      "transactions": [
+        {
+          "amount": {
+            "total": "19.68",
+            "currency": "USD",
+            "details": {}
+          },
+          "item_list": {},
+          "related_resources": [
+            {
+              "sale": {
+                "id": "4Y672960UB541633X",
+                "state": "completed",
+                "payment_mode": "INSTANT_TRANSFER",
+                "protection_eligibility": "ELIGIBLE",
+                "parent_payment": "PAY-14P3508003313404VLL2UCII",
+                "create_time": "2018-05-11T07:07:23Z",
+                "update_time": "2018-05-11T07:07:23Z",
+                "amount": {
+                  "total": "19.68",
+                  "currency": "USD",
+                  "details": {
+                    "subtotal": "19.68"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAY-9VB13891SU726531HLL2UESI",
+      "intent": "sale",
+      "state": "approved",
+      "cart": "5E968361V9577121U",
+      "create_time": "2018-05-11T07:12:54Z",
+      "payer": {
+        "payment_method": "paypal",
+        "status": "UNVERIFIED",
+        "payer_info": {
+          "email": "h1339335@nwytg.com",
+          "first_name": "Madison",
+          "middle_name": "Madison",
+          "last_name": "Jones",
+          "payer_id": "UHA84FANND3R2",
+          "country_code": "BG",
+          "shipping_address": {
+            "recipient_name": "Madison Jones",
+            "line1": "River Street 137",
+            "city": "Bulgaria",
+            "state": "",
+            "postal_code": "6489",
+            "country_code": "BG"
+          }
+        }
+      },
+      "transactions": [
+        {
+          "amount": {
+            "total": "19.68",
+            "currency": "USD",
+            "details": {}
+          },
+          "item_list": {},
+          "related_resources": [
+            {
+              "sale": {
+                "id": "0G673000Y0014381J",
+                "state": "completed",
+                "payment_mode": "INSTANT_TRANSFER",
+                "protection_eligibility": "ELIGIBLE",
+                "parent_payment": "PAY-9VB13891SU726531HLL2UESI",
+                "create_time": "2018-05-11T07:12:53Z",
+                "update_time": "2018-05-11T07:12:53Z",
+                "amount": {
+                  "total": "19.68",
+                  "currency": "USD",
+                  "details": {
+                    "subtotal": "19.68"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAY-16Y40186KC033251WLL2UFVQ",
+      "intent": "sale",
+      "state": "approved",
+      "cart": "7FD347058S041223F",
+      "create_time": "2018-05-11T07:14:41Z",
+      "payer": {
+        "payment_method": "paypal",
+        "status": "UNVERIFIED",
+        "payer_info": {
+          "email": "h1339335@nwytg.com",
+          "first_name": "Madison",
+          "middle_name": "Madison",
+          "last_name": "Jones",
+          "payer_id": "UHA84FANND3R2",
+          "country_code": "BG",
+          "shipping_address": {
+            "recipient_name": "Madison Jones",
+            "line1": "River Street 137",
+            "city": "Bulgaria",
+            "state": "",
+            "postal_code": "6489",
+            "country_code": "BG"
+          }
+        }
+      },
+      "transactions": [
+        {
+          "amount": {
+            "total": "19.68",
+            "currency": "USD",
+            "details": {}
+          },
+          "item_list": {},
+          "related_resources": [
+            {
+              "sale": {
+                "id": "2E0224484R714002T",
+                "state": "completed",
+                "payment_mode": "INSTANT_TRANSFER",
+                "protection_eligibility": "ELIGIBLE",
+                "parent_payment": "PAY-16Y40186KC033251WLL2UFVQ",
+                "create_time": "2018-05-11T07:14:40Z",
+                "update_time": "2018-05-11T07:14:40Z",
+                "amount": {
+                  "total": "19.68",
+                  "currency": "USD",
+                  "details": {
+                    "subtotal": "19.68"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAY-5K666538F0442625LLL2UGOY",
+      "intent": "sale",
+      "state": "approved",
+      "cart": "1WW33760XE445372P",
+      "create_time": "2018-05-11T07:16:22Z",
+      "payer": {
+        "payment_method": "paypal",
+        "status": "UNVERIFIED",
+        "payer_info": {
+          "email": "h1339335@nwytg.com",
+          "first_name": "Madison",
+          "middle_name": "Madison",
+          "last_name": "Jones",
+          "payer_id": "UHA84FANND3R2",
+          "country_code": "BG",
+          "shipping_address": {
+            "recipient_name": "Madison Jones",
+            "line1": "River Street 137",
+            "city": "Bulgaria",
+            "state": "",
+            "postal_code": "6489",
+            "country_code": "BG"
+          }
+        }
+      },
+      "transactions": [
+        {
+          "amount": {
+            "total": "12.70",
+            "currency": "USD",
+            "details": {}
+          },
+          "item_list": {},
+          "related_resources": [
+            {
+              "sale": {
+                "id": "3B102902XK701990V",
+                "state": "completed",
+                "payment_mode": "INSTANT_TRANSFER",
+                "protection_eligibility": "ELIGIBLE",
+                "parent_payment": "PAY-5K666538F0442625LLL2UGOY",
+                "create_time": "2018-05-11T07:16:22Z",
+                "update_time": "2018-05-11T07:16:22Z",
+                "amount": {
+                  "total": "12.70",
+                  "currency": "USD",
+                  "details": {
+                    "subtotal": "12.70"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAY-74443556HJ948252JLL2UHTQ",
+      "intent": "sale",
+      "state": "approved",
+      "cart": "1RV724599G140511J",
+      "create_time": "2018-05-11T07:18:49Z",
+      "payer": {
+        "payment_method": "paypal",
+        "status": "UNVERIFIED",
+        "payer_info": {
+          "email": "h1339335@nwytg.com",
+          "first_name": "Madison",
+          "middle_name": "Madison",
+          "last_name": "Jones",
+          "payer_id": "UHA84FANND3R2",
+          "country_code": "BG",
+          "shipping_address": {
+            "recipient_name": "Madison Jones",
+            "line1": "River Street 137",
+            "city": "Bulgaria",
+            "state": "",
+            "postal_code": "6489",
+            "country_code": "BG"
+          }
+        }
+      },
+      "transactions": [
+        {
+          "amount": {
+            "total": "17.25",
+            "currency": "USD",
+            "details": {}
+          },
+          "item_list": {},
+          "related_resources": [
+            {
+              "sale": {
+                "id": "9VB47450J05138330",
+                "state": "completed",
+                "payment_mode": "INSTANT_TRANSFER",
+                "protection_eligibility": "ELIGIBLE",
+                "parent_payment": "PAY-74443556HJ948252JLL2UHTQ",
+                "create_time": "2018-05-11T07:18:49Z",
+                "update_time": "2018-05-11T07:18:49Z",
+                "amount": {
+                  "total": "17.25",
+                  "currency": "USD",
+                  "details": {
+                    "subtotal": "17.25"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "payment": {
+        "id": "PAY-3F098818PY626624LLL2UOXI",
+        "intent": "sale",
+        "state": "approved",
+        "cart": "9YV22664MJ680060E",
+        "create_time": "2018-05-11T07:34:00Z",
+        "payer": {
+          "payment_method": "paypal",
+          "status": "UNVERIFIED",
+          "payer_info": {
+            "email": "h1339335@nwytg.com",
+            "first_name": "Madison",
+            "middle_name": "Madison",
+            "last_name": "Jones",
+            "payer_id": "UHA84FANND3R2",
+            "country_code": "BG",
+            "shipping_address": {
+              "recipient_name": "Madison Jones",
+              "line1": "River Street 137",
+              "city": "Bulgaria",
+              "state": "",
+              "postal_code": "6489",
+              "country_code": "BG"
+            }
+          }
+        },
+        "transactions": [
+          {
+            "amount": {
+              "total": "2.54",
+              "currency": "USD",
+              "details": {}
+            },
+            "item_list": {},
+            "related_resources": [
+              {
+                "sale": {
+                  "id": "6DY16335E97908918",
+                  "state": "completed",
+                  "payment_mode": "INSTANT_TRANSFER",
+                  "protection_eligibility": "ELIGIBLE",
+                  "parent_payment": "PAY-3F098818PY626624LLL2UOXI",
+                  "create_time": "2018-05-11T07:33:59Z",
+                  "update_time": "2018-05-11T07:33:59Z",
+                  "amount": {
+                    "total": "2.54",
+                    "currency": "USD",
+                    "details": {
+                      "subtotal": "2.54"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 2,
+          "image": "http://juliandance.org/wp-content/uploads/2016/01/RedApple.jpg",
+          "name": "obuolys",
+          "summary": "Zalias",
+          "price": "2.54",
+          "rating": "2",
+          "category": "Fruits",
+          "quantity": 1
+        }
+      ],
+      "id": "W5wPKsy"
+    }
   ]
 }
