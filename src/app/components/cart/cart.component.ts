@@ -12,7 +12,6 @@ declare let paypal: any;
 export class CartComponent implements OnInit {
 
   constructor(private localSt:LocalStorageService,private prod:CartserviceService) { }
-
   products:Array<productsModel>;
   price:Number=0;
 
@@ -23,6 +22,7 @@ export class CartComponent implements OnInit {
   delete(prod:productsModel){
     this.prod.removeProduct(prod);
     this.products= this.prod.GetProduct();
+    this.prod.countPrice();
   }
   
   addScript: boolean = false;
@@ -33,7 +33,7 @@ export class CartComponent implements OnInit {
   paypalConfig = {
     env: 'sandbox',
     client: {
-      sandbox: 'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
+      sandbox: 'AYsqcoNw1jVgJ7FIdL2pDfyTdSJPZuRQvs3DKftkjV0ajogWld-sK7jhca7InPdcs5Ws6nHCKGbmzgjH',
       production: ''
     },
     commit: true,
@@ -49,6 +49,10 @@ export class CartComponent implements OnInit {
     onAuthorize: (data, actions) => {
       return actions.payment.execute().then((payment) => {
         //Do something when payment is successful.
+        this.prod.postPayment(payment).subscribe();
+        this.localSt.clear();
+        this.products= new Array<productsModel>();
+        this.prod.countPrice();
       })
     }
   };

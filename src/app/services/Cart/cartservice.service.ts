@@ -1,13 +1,18 @@
 import { Injectable } from '@angular/core';
 import { productsModel } from '../../models/products/products.model';
 import { LocalStorageService } from 'ngx-webstorage';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
+import { Http,Response } from '@angular/http';
 
 @Injectable()
 export class CartserviceService {
 
   products:productsModel[];
   price: Number;
-  constructor(private localSt:LocalStorageService) { }
+  url2='http://localhost:3000/payments';
+  constructor(private localSt:LocalStorageService,private http: Http) { }
   GetProduct(){
     this.products=JSON.parse(this.localSt.retrieve('cart')) || [];
     return this.products;
@@ -29,4 +34,10 @@ export class CartserviceService {
     this.products = this.products.filter(obj => obj !== delte );
     this.leaving(this.products);
   }
+  postPayment(payment):Observable<any>{
+    console.log(payment);
+    return this.http.post(this.url2,payment)
+    .map((res: Response) => res.json() as any)
+    .catch((error: any) => Observable.throw(error));
+  } 
 }
