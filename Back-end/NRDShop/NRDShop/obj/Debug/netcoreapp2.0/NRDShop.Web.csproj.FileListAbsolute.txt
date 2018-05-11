@@ -1,0 +1,16 @@
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\bin\Debug\netcoreapp2.0\NRDShop.Web.deps.json
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\bin\Debug\netcoreapp2.0\NRDShop.Web.runtimeconfig.json
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\bin\Debug\netcoreapp2.0\NRDShop.Web.runtimeconfig.dev.json
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\bin\Debug\netcoreapp2.0\NRDShop.Web.dll
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\obj\Debug\netcoreapp2.0\NRDShop.Web.csproj.CoreCompileInputs.cache
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\obj\Debug\netcoreapp2.0\NRDShop.Web.AssemblyInfoInputs.cache
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\obj\Debug\netcoreapp2.0\NRDShop.Web.AssemblyInfo.cs
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\bin\Debug\netcoreapp2.0\NRDShop.Web.pdb
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\obj\Debug\netcoreapp2.0\NRDShop.Web.dll
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\obj\Debug\netcoreapp2.0\NRDShop.Web.pdb
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\bin\Debug\netcoreapp2.0\NRDShop.EF.dll
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\bin\Debug\netcoreapp2.0\NRDShop.EF.pdb
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\obj\Debug\netcoreapp2.0\NRDShop.Web.csproj.CopyComplete
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\bin\Debug\netcoreapp2.0\NRDShop.Application.dll
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\bin\Debug\netcoreapp2.0\NRDShop.Application.pdb
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop\obj\Debug\netcoreapp2.0\NRDShop.Web.csprojResolveAssemblyReference.cache

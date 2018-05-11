@@ -1,0 +1,9 @@
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop.EF\bin\Debug\netcoreapp2.0\NRDShop.EF.deps.json
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop.EF\bin\Debug\netcoreapp2.0\NRDShop.EF.dll
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop.EF\obj\Debug\netcoreapp2.0\NRDShop.EF.csproj.CoreCompileInputs.cache
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop.EF\obj\Debug\netcoreapp2.0\NRDShop.EF.AssemblyInfoInputs.cache
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop.EF\obj\Debug\netcoreapp2.0\NRDShop.EF.AssemblyInfo.cs
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop.EF\bin\Debug\netcoreapp2.0\NRDShop.EF.pdb
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop.EF\obj\Debug\netcoreapp2.0\NRDShop.EF.dll
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop.EF\obj\Debug\netcoreapp2.0\NRDShop.EF.pdb
+C:\Users\Tomas\repos\NRD\projektas\Back-end\NRDShop\NRDShop.EF\obj\Debug\netcoreapp2.0\NRDShop.EF.csprojResolveAssemblyReference.cache
