@@ -336,6 +336,78 @@
           ]
         }
       ]
+    },
+    {
+      "payment": {
+        "id": "PAY-3F098818PY626624LLL2UOXI",
+        "intent": "sale",
+        "state": "approved",
+        "cart": "9YV22664MJ680060E",
+        "create_time": "2018-05-11T07:34:00Z",
+        "payer": {
+          "payment_method": "paypal",
+          "status": "UNVERIFIED",
+          "payer_info": {
+            "email": "h1339335@nwytg.com",
+            "first_name": "Madison",
+            "middle_name": "Madison",
+            "last_name": "Jones",
+            "payer_id": "UHA84FANND3R2",
+            "country_code": "BG",
+            "shipping_address": {
+              "recipient_name": "Madison Jones",
+              "line1": "River Street 137",
+              "city": "Bulgaria",
+              "state": "",
+              "postal_code": "6489",
+              "country_code": "BG"
+            }
+          }
+        },
+        "transactions": [
+          {
+            "amount": {
+              "total": "2.54",
+              "currency": "USD",
+              "details": {}
+            },
+            "item_list": {},
+            "related_resources": [
+              {
+                "sale": {
+                  "id": "6DY16335E97908918",
+                  "state": "completed",
+                  "payment_mode": "INSTANT_TRANSFER",
+                  "protection_eligibility": "ELIGIBLE",
+                  "parent_payment": "PAY-3F098818PY626624LLL2UOXI",
+                  "create_time": "2018-05-11T07:33:59Z",
+                  "update_time": "2018-05-11T07:33:59Z",
+                  "amount": {
+                    "total": "2.54",
+                    "currency": "USD",
+                    "details": {
+                      "subtotal": "2.54"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 2,
+          "image": "http://juliandance.org/wp-content/uploads/2016/01/RedApple.jpg",
+          "name": "obuolys",
+          "summary": "Zalias",
+          "price": "2.54",
+          "rating": "2",
+          "category": "Fruits",
+          "quantity": 1
+        }
+      ],
+      "id": "W5wPKsy"
     }
   ]
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { productsModel } from '../../models/products/products.model';
 import { LocalStorageService } from 'ngx-webstorage';
 import { CartserviceService } from '../../services/Cart/cartservice.service';
+import {Transactions} from '../../models/products/transaction.model'
 declare let paypal: any;
 @Component({
   selector: 'app-cart',
@@ -49,7 +50,10 @@ export class CartComponent implements OnInit {
     onAuthorize: (data, actions) => {
       return actions.payment.execute().then((payment) => {
         //Do something when payment is successful.
-        this.prod.postPayment(payment).subscribe();
+        var a  = new Transactions;
+        a.payment=payment;
+        a.products=this.prod.GetProduct();
+        this.prod.postPayment(a).subscribe();
         this.localSt.clear();
         this.products= new Array<productsModel>();
         this.prod.countPrice();
