@@ -11,7 +11,7 @@ export class CategoryPipe implements PipeTransform {
         return [];
     }
 
-    if (typeFilter) {
+    if (typeFilter && typeFilter!="none") {
         return items.filter(i => i.category === typeFilter);
     }
 

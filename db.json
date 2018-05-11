@@ -35,6 +35,48 @@
       "price": "2.11",
       "rating": "0.5",
       "category": "Fruits"
+    },
+	  {
+      "id": 5,
+      "image": "https://3.bp.blogspot.com/-S1y86KcuDsw/WR44uq_kOpI/AAAAAAABWXY/DA037N1nvO04kBuWRfgucBicfqEAO5kswCLcB/s1600/Yummy+MILKA+OREO+Chocolate+Candy-3.jpg",
+      "name": "Milka",
+      "summary": "Geras šokoladas",
+      "price": "2.11",
+      "rating": "4.5",
+      "category": "Chocolate"
+    },
+	  {
+      "id": 6,
+      "image": "http://biogoods.lt/260-large_default/kriau%C5%A1%C4%97-%C5%A1taro-ankstyvoji.jpg",
+      "name": "Kriause",
+      "summary": "",
+      "price": "2.01",
+      "rating": "5",
+      "category": "Fruits"
+    },  {
+      "id": 7,
+      "image": "https://www.oasis-botanical.ca/wp-content/uploads/2017/02/orange-web.jpg",
+      "name": "Orange",
+      "summary": " red",
+      "price": "2.11",
+      "rating": "0.5",
+      "category": "Fruits"
+    },  {
+      "id": 8,
+      "image": "https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-768x768.jpg",
+	  "name": "Cookies",
+      "summary": "Tasty",
+      "price": "0.99",
+      "rating": "2.5",
+      "category": "Cookies"
+    },  {
+      "id": 9,
+      "image": "https://www.runnersworld.com/sites/runnersworld.com/files/styles/article_main_custom_user_phone_1x/public/sylvanus-urban-302505.jpg?itok=6iZ_ucHp&timestamp=1507647158",
+      "name": "Gummy worms",
+      "summary": "",
+      "price": "1.99",
+      "rating": "2",
+      "category": "Candies"
     }
   ],
   "category": [
