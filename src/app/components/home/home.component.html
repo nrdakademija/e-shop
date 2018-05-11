@@ -4,7 +4,7 @@
 
     <div class="col-lg-3">
 
-      <h1 class="my-4">Parduotuvė</h1>
+      <h1 class="my-4" (click)="categorysort.setCategory()">Parduotuvė</h1>
       <div class="list-group" *ngFor="let name of Categories |async">
         <a (click)="categorysort.setCategory(name.name)" class="list-group-item">{{name.name}}</a>
       </div>
