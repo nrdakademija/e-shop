@@ -2,9 +2,11 @@
   <div class="row">
     <div class="col-lg-3"></div>
     <div class="col-lg-9">
-<div class="col-lg-4 col-md-6 mb-4 d-inline-block" style="height: 426px!important;" *ngFor="let product of products| async | category: categorysort.category">
+      <div class="col-lg-4 col-md-6 mb-4 d-inline-block" style="height: 426px!important;" *ngFor="let product of products| async | category: categorysort.category">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" style="height: 200px;width: 229px" src="{{product.image}}" alt="" ></a>
+          <a href="#">
+            <img class="card-img-top" style="height: 200px;width: 200px" src="{{product.image}}" alt="">
+          </a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="#">{{product.name}}</a>
@@ -12,9 +14,9 @@
             <h5>{{product.price}}€</h5>
             <p class="card-text">{{product.summary}}</p>
           </div>
-          <button class="btn btn-primary" (click)="putProduct(product)" >BUY</button>
+          <button class="btn btn-primary" (click)="putProduct(product)">BUY</button>
           <div class="card-footer">
-            <cli-star-rating [starReadonly] = "false" [rating]="product.rating"></cli-star-rating>
+            <cli-star-rating [starReadonly]="false" [rating]="product.rating"></cli-star-rating>
           </div>
         </div>
       </div>

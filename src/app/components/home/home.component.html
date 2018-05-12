@@ -5,7 +5,7 @@
     <div class="col-lg-3">
 
       <h1 class="my-4" style="cursor: pointer" (click)="categorysort.setCategory()">Parduotuvė</h1>
-      <div class="list-group" *ngFor="let name of Categories |async">
+      <div class="list-group" *ngFor="let name of Categories | async">
         <button (click)="categorysort.setCategory(name.name)" class="list-group-item btn btn-light">{{name.name}}
         </button>
       </div>
@@ -22,19 +22,20 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img class="d-block img-fluid" src="https://static1.squarespace.com/static/53c387e0e4b0d5fd0ebcb7e4/t/54d28a3ae4b0ae59f7898b0c/1515097992759/Welcome+to+my+Shop-01.png" alt="First slide">
+            <img class="d-block img-fluid" src="https://static1.squarespace.com/static/53c387e0e4b0d5fd0ebcb7e4/t/54d28a3ae4b0ae59f7898b0c/1515097992759/Welcome+to+my+Shop-01.png"
+              alt="First slide">
           </div>
 
-      </div>
+        </div>
 
-      <!--div class="row"-->
+        <!--div class="row"-->
+      </div>
     </div>
   </div>
-</div>
-<app-product></app-product>
+  <app-product></app-product>
 
-<!--/div-->
-<!--
+  <!--/div-->
+  <!--
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
@@ -116,12 +117,12 @@
         </div> 
 -->
 
-<!-- /.row >
+  <!-- /.row >
 
     </div>
     <!-- /.col-lg-9 -->
 
 
-<!-- /.row -->
+  <!-- /.row -->
 
-<!-- /.container -->
+  <!-- /.container -->

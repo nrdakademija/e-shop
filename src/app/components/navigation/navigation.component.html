@@ -9,7 +9,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <form class="form-inline mt-2 mt-md-0">
-      <input class="form-control mx-sm-2"  type="text" placeholder="Paieška" aria-label="Search">
+      <input class="form-control mx-sm-2" type="text" placeholder="Paieška" aria-label="Search">
       <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
         <span class="fa fa-search"></span>
       </button>
@@ -25,7 +25,9 @@
       </li>
       <li class="nav-item mr-3">
         <a class="nav-link" [routerLink]="['../cart']">
-          <span class="fa fa-shopping-cart"> Krepšelis</span>
+          <span class="fa fa-shopping-cart"> Krepšelis
+            <span class="badge" *ngFor="let c of (products | async); let i = index">{{i+1}}</span>
+          </span>
         </a>
       </li>
     </ul>
