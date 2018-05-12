@@ -14,6 +14,7 @@ import { ToastrService } from 'ngx-toastr';
 export class ProductComponent implements OnInit {
 
   products: Observable<productsModel[]>;
+  p: number = 1;
   constructor(private productsService: ProductsService, private localSt: LocalStorageService, private categorysort: CategorysortService,
     private toastr: ToastrService) {
   }

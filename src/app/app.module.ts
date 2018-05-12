@@ -23,6 +23,7 @@ import { CategoryService } from './services/category/category.service';
 import { CategoryPipe } from './pipes/category/category.pipe';
 import { CategorysortService } from './services/shared/categorysort.service';
 import { ToastrModule } from 'ngx-toastr';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { ToastrModule } from 'ngx-toastr';
       maxOpened: 3,
       autoDismiss: true,
     }),
+    NgxPaginationModule
   ],
 
   providers: [ProductsService, CartserviceService, CategoryService, CategorysortService],
