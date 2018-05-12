@@ -47,7 +47,10 @@ import { ToastrModule } from 'ngx-toastr';
     AngularcliStarRatingModule,
     AngularFontAwesomeModule,
     ReactiveFormsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      maxOpened: 3,
+      autoDismiss: true,
+    }),
   ],
 
   providers: [ProductsService, CartserviceService, CategoryService, CategorysortService],
