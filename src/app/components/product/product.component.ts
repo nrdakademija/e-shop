@@ -27,14 +27,31 @@ export class ProductComponent implements OnInit {
   putProduct(product): any {
     let a: Array<productsModel>;
     a = JSON.parse(this.localSt.retrieve('cart')) || [];
-    if (a.includes(product)) {
-      a[a.indexOf(product)].quantity = +a[a.indexOf(product)].quantity + 1;
+    product.quantity = 0;
+    let check = false;
+
+    for (let i = 0; i < a.length; i++) {
+      if (a[i].id == product.id) {
+        a[i].quantity = +a[i].quantity + 1;
+        check = true;
+      }
     }
-    else {
+
+    if (!check) {
       product.quantity = 1;
       a.push(product);
     }
     this.localSt.store('cart', JSON.stringify(a));
     this.toastr.success(product.name + ' pridėtas į krepšelį');
   }
+  containsObject(obj, list) {
+    var i;
+    for (i = 0; i < list.length; i++) {
+      if (list[i].id == obj.id) {
+        return true;
+      }
+    }
+    return false;
+  }
 }
+

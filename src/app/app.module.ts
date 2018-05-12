@@ -52,7 +52,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
       maxOpened: 3,
       autoDismiss: true,
     }),
-    NgxPaginationModule
+    NgxPaginationModule,
   ],
 
   providers: [ProductsService, CartserviceService, CategoryService, CategorysortService],
