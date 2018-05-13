@@ -7,8 +7,8 @@ import { productsModel } from '../../models/products/products.model';
 
 @Injectable()
 export class ProductsService {
-  url = 'http://localhost:3000/products';
-  url2 = 'http://localhost:3000/payments';
+  url = 'http://localhost:53152/products';
+  //url2 = 'http://localhost:3000/payments';
   constructor(private http: Http) { }
 
   getList(): Observable<productsModel[]> {

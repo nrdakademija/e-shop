@@ -103,4 +103,36 @@ VALUES ( 1 ,  -- Id - int
          4.20, -- Price - decimal
 		 NULL, -- Rating - decimal
 		 2
+    ),
+    ( 9 ,  -- Id - int
+         'https://3.bp.blogspot.com/-S1y86KcuDsw/WR44uq_kOpI/AAAAAAABWXY/DA037N1nvO04kBuWRfgucBicfqEAO5kswCLcB/s1600/Yummy+MILKA+OREO+Chocolate+Candy-3.jpg' ,  -- Image - int
+         'Milka' , -- Name - varchar(20)
+         'Geras šokoladas' , -- Summary - varchar(50)
+         2.11, -- Price - decimal
+		 4.5, -- Rating - decimal
+		 3
+    ),
+    ( 10 ,  -- Id - int
+         'http://biogoods.lt/260-large_default/kriau%C5%A1%C4%97-%C5%A1taro-ankstyvoji.jpg' ,  -- Image - int
+         'Kriaušė' , -- Name - varchar(20)
+         '' , -- Summary - varchar(50)
+         2.01, -- Price - decimal
+		 5, -- Rating - decimal
+		 1
+    ),
+    ( 11 ,  -- Id - int
+         'https://www.oasis-botanical.ca/wp-content/uploads/2017/02/orange-web.jpg' ,  -- Image - int
+         'Apelsinas' , -- Name - varchar(20)
+         'Raudonas' , -- Summary - varchar(50)
+         2.11, -- Price - decimal
+		 0.5, -- Rating - decimal
+		 1
+    ),
+    ( 12 ,  -- Id - int
+         'https://www.runnersworld.com/sites/runnersworld.com/files/styles/article_main_custom_user_phone_1x/public/sylvanus-urban-302505.jpg' ,  -- Image - int
+         'Guminukai' , -- Name - varchar(20)
+         'Niam niam' , -- Summary - varchar(50)
+         1.99, -- Price - decimal
+		 2, -- Rating - decimal
+		 3
     );

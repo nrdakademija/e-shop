@@ -46,9 +46,10 @@ export class ProductComponent implements OnInit {
     this.localSt.store('cart', JSON.stringify(a));
     this.toastr.success(product.name + ' pridėtas į krepšelį');
   }
-  open(modal, productIndex) {
+  open(modal, productIndex, property) {
+    //TODO
     this.modalService.open(modal);
-    this.productInfo = this.products.map(arr => arr[productIndex].summary);
+    this.productInfo = this.products.map(arr => arr[productIndex].image);
   }
 }
 

@@ -5,12 +5,12 @@
       <div class="col-lg-4 col-md-6 mb-4 d-inline-block" style="height: 426px!important;" *ngFor="let product of products | async | category: categorysort.category | 
       paginate: {itemsPerPage: 9, currentPage: p}; let ind = index">
         <div class="card h-100">
-          <a (click)="open(modal, ind)">
+          <a (click)="open(modal, ind, image)">
             <img class="card-img-top" style="height: 200px;width: 200px" src="{{product.image}}" alt="">
           </a>
           <div class="card-body">
             <h4 class="card-title">
-              <a (click)="open(modal, ind)">{{product.name}}</a>
+              <a href="#">{{product.name}}</a>
             </h4>
             <h5>{{product.price}}€</h5>
             <p class="card-text">{{product.summary}}</p>
@@ -26,3 +26,31 @@
     </div>
   </div>
 </div>
+<!--TODO
+<ng-template #modal let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Employee inventory details</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <!--<div class="modal-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let e of employeeInventory$ | async; let ind = index;">
+                    <th>{{ind+1}}</th>
+                    <th>{{e.name}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c()">Close</button>
+  </div>
+</ng-template>-->
