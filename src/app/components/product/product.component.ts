@@ -5,6 +5,7 @@ import { productsModel } from '../../models/products/products.model';
 import { LocalStorageService, LocalStorage } from 'ngx-webstorage';
 import { CategorysortService } from '../../services/shared/categorysort.service';
 import { ToastrService } from 'ngx-toastr';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-product',
@@ -15,8 +16,9 @@ export class ProductComponent implements OnInit {
 
   products: Observable<productsModel[]>;
   p: number = 1;
+  productInfo: Observable<any>;
   constructor(private productsService: ProductsService, private localSt: LocalStorageService, private categorysort: CategorysortService,
-    private toastr: ToastrService) {
+    private toastr: ToastrService, private modalService: NgbModal) {
   }
   ngOnInit() {
     this.productsService.getList().subscribe((response: productsModel[]) => {
@@ -44,14 +46,9 @@ export class ProductComponent implements OnInit {
     this.localSt.store('cart', JSON.stringify(a));
     this.toastr.success(product.name + ' pridėtas į krepšelį');
   }
-  containsObject(obj, list) {
-    var i;
-    for (i = 0; i < list.length; i++) {
-      if (list[i].id == obj.id) {
-        return true;
-      }
-    }
-    return false;
+  open(modal, productIndex) {
+    this.modalService.open(modal);
+    this.productInfo = this.products.map(arr => arr[productIndex].summary);
   }
 }
 

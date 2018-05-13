@@ -3,14 +3,14 @@
     <div class="col-lg-3"></div>
     <div class="col-lg-9">
       <div class="col-lg-4 col-md-6 mb-4 d-inline-block" style="height: 426px!important;" *ngFor="let product of products | async | category: categorysort.category | 
-      paginate: {itemsPerPage: 9, currentPage: p}">
+      paginate: {itemsPerPage: 9, currentPage: p}; let ind = index">
         <div class="card h-100">
-          <a href="#">
+          <a (click)="open(modal, ind)">
             <img class="card-img-top" style="height: 200px;width: 200px" src="{{product.image}}" alt="">
           </a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">{{product.name}}</a>
+              <a (click)="open(modal, ind)">{{product.name}}</a>
             </h4>
             <h5>{{product.price}}€</h5>
             <p class="card-text">{{product.summary}}</p>
@@ -22,6 +22,7 @@
         </div>
       </div>
       <pagination-controls class="col-lg-4 col-md-6 mb-4" style="text-align: center" (pageChange)="p = $event"></pagination-controls>
+
     </div>
   </div>
 </div>

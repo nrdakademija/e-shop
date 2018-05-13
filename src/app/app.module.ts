@@ -24,6 +24,7 @@ import { CategoryPipe } from './pipes/category/category.pipe';
 import { CategorysortService } from './services/shared/categorysort.service';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
       autoDismiss: true,
     }),
     NgxPaginationModule,
+    NgbModule.forRoot(),
   ],
 
   providers: [ProductsService, CartserviceService, CategoryService, CategorysortService],
