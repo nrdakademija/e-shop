@@ -29,27 +29,28 @@ export class ProductComponent implements OnInit {
   putProduct(product): any {
     let a: Array<productsModel>;
     a = JSON.parse(this.localSt.retrieve('cart')) || [];
-    product.quantity = 0;
+    product.Quantity = 0;
     let check = false;
-
+    console.log(a);
+    console.log(product);
     for (let i = 0; i < a.length; i++) {
-      if (a[i].id == product.id) {
-        a[i].quantity = +a[i].quantity + 1;
+      if (a[i].ID == product.ID) {
+        a[i].Quantity = +a[i].Quantity + 1;
         check = true;
       }
     }
 
     if (!check) {
-      product.quantity = 1;
+      product.Quantity = 1;
       a.push(product);
     }
     this.localSt.store('cart', JSON.stringify(a));
-    this.toastr.success(product.name + ' pridėtas į krepšelį');
+    this.toastr.success(product.Name + ' pridėtas į krepšelį');
   }
   open(modal, productIndex, property) {
     //TODO
     this.modalService.open(modal);
-    this.productInfo = this.products.map(arr => arr[productIndex].image);
+    this.productInfo = this.products.map(arr => arr[productIndex].Image);
   }
 }
 

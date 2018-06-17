@@ -18,17 +18,17 @@
 							width: 100px;"/>
 						</div>
 						<div name="tekstas" id="tekstas" class="col-sm-10" style="padding-left: 10%;">
-							<h4 class="m-0">{{Product.name}}</h4>
-							<p>{{Product.summary}}</p>
+							<h4 class="m-0">{{Product.Name}}</h4>
+							<p>{{Product.Description}}</p>
 						</div>
 					</div>
 				</td>
-				<td data-th="Price">{{Product.price}}</td>
+				<td data-th="Price">{{Product.Price}}</td>
 				<td data-th="Quantity">
-					<input type="number" min='1' [(ngModel)]="Product.quantity" (ngModelChange)="this.prod.countPrice()" class="form-control text-center"
+					<input type="number" min='1' [(ngModel)]="Product.Quantity" (ngModelChange)="this.prod.countPrice()" class="form-control text-center"
 					/>
 				</td>
-				<td data-th="Subtotal" class="text-center" >{{(Product.price*Product.quantity).toFixed(2)}}</td>
+				<td data-th="Subtotal" class="text-center" >{{(Product.Price*Product.Quantity).toFixed(2)}}</td>
 				<td class="actions" data-th="">
 					<button class="btn btn-danger btn-sm" (click)="delete(Product)">
 						<i class="fa fa-trash-o"></i>

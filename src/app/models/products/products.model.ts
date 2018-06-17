@@ -1,9 +1,9 @@
 export class productsModel{
-    id: Number;
-    image: String;
-    name: String;
-    summary: String;
-    quantity:Number;
-    price:Number;
-    rating:Number;
+    ID: Number;
+    TypeID:Number;
+    Image: String;
+    Name: String;
+    Description: String;
+    Quantity:Number;
+    Price:Number;
 }

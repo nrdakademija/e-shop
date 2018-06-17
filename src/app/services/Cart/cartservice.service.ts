@@ -25,7 +25,7 @@ export class CartserviceService {
   countPrice() {
     this.price = 0;
     for (let a of this.products) {
-      this.price = +this.price + +a.price * +a.quantity;
+      this.price = +this.price + +a.Price * +a.Quantity;
     }
     this.price = +this.price.toFixed(2);
     return this.price;

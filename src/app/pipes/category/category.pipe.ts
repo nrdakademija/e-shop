@@ -12,7 +12,7 @@ export class CategoryPipe implements PipeTransform {
     }
 
     if (typeFilter && typeFilter!="none") {
-        return items.filter(i => i.category === typeFilter);
+        return items.filter(i => i.TypeID === typeFilter);
     }
 
     return items;
