@@ -9,7 +9,7 @@ import { categoryModel } from '../../models/category/category.model'
 @Injectable()
 export class CategoryService {
 
-  url = '  http://localhost:8000/producttypes ';
+  url = '  http://localhost:3000/producttypes ';
 
   constructor(private http: Http) { }
 
