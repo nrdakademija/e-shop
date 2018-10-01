@@ -9,7 +9,11 @@ import { categoryModel } from '../../models/category/category.model'
 @Injectable()
 export class CategoryService {
 
+<<<<<<< HEAD
   url = '  http://localhost:8000/producttypes ';
+=======
+  url = 'http://localhost:3000/category';
+>>>>>>> parent of bc208df... Fix db from dummy to api
 
   constructor(private http: Http) { }
 

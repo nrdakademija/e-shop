@@ -7,8 +7,13 @@ import { productsModel } from '../../models/products/products.model';
 
 @Injectable()
 export class ProductsService {
+<<<<<<< HEAD
   url = 'http://localhost:8000/products';
   //url2 = 'http://localhost:3000/payments';
+=======
+  url = 'http://localhost:3000/products';
+  url2 = 'http://localhost:3000/payments';
+>>>>>>> parent of bc208df... Fix db from dummy to api
   constructor(private http: Http) { }
 
   getList(): Observable<productsModel[]> {

@@ -47,10 +47,13 @@ export class ProductComponent implements OnInit {
     this.localSt.store('cart', JSON.stringify(a));
     this.toastr.success(product.Name + ' pridėtas į krepšelį');
   }
-  open(modal, productIndex, property) {
-    //TODO
+  open(modal, productIndex) {
     this.modalService.open(modal);
+<<<<<<< HEAD
     this.productInfo = this.products.map(arr => arr[productIndex].Image);
+=======
+    this.productInfo = this.products.map(arr => arr[productIndex].summary);
+>>>>>>> parent of bc208df... Fix db from dummy to api
   }
 }
 
